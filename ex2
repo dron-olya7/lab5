@@ -1,0 +1,22 @@
+public class ex2 {
+
+	  private char a, b; //два символьных поля
+	    public ex2( char x, char y) // конструктов, в который передаются два символьных поля
+	    {
+	        a = x;
+	        b =y;
+
+	    }
+	    public int print()//метод, который печатает по коду символа значения между  a b
+	    {
+	        if (a < b)
+	            for (char i = a; i <= b; ++i)
+	                System.out.print(i + " ");
+
+	        else
+	            for(char j = b; j <= b; ++j)
+	                System.out.print(j+ " ");
+
+	        return Math.abs(a -b) + 1; //  возвращаем количество символов от одного до другого включительно
+	    }
+	}
