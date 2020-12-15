@@ -1,0 +1,22 @@
+ublic class ex3 {
+
+	    public int a, b;
+	    public  ex3 ()
+	    {
+	        a = 0;
+	        b = 0;
+
+	    }
+	    public ex3(int x)
+	    {
+	        a = x;
+	        b = x;
+	    }
+	    public ex3(int y, int z)
+	    {
+	        a = y;
+	        b = z;
+
+	    }
+
+	}
