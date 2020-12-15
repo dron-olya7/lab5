@@ -1,0 +1,70 @@
+public class MainClass {
+		
+	    public static void main(String[] args) {
+	    	
+	        System.out.println("ex1");
+	        System.out.println("--------------------");
+	        System.out.println();
+	            ex1 Ex1 = new ex1(); // создали новый экземпляр класса
+	            Ex1.setA('A'); // передали значение методу setA
+	            System.out.println(Ex1.getCode()); // вывели на печать результат метода get.Code
+	            Ex1.print();// обратились к методу print
+	        System.out.println();
+	        System.out.println();
+
+
+	        System.out.println("ex2");
+	        System.out.println("--------------------");
+	        System.out.println();
+	            ex2 Ex2 = new ex2('A', 'Z');
+	            int count = Ex2.print();
+	            System.out.println();
+	            System.out.print("Количество символов: " + count);
+	        System.out.println();
+	        System.out.println();
+
+	        System.out.println("ex3");
+	        System.out.println("--------------------");
+	        System.out.println();
+	            ex3 None = new ex3(); //создаем объект с помощью первого конструктора
+	            ex3 One = new ex3(100);// с помощью второго
+	            ex3 Double = new ex3(100,200);// с помощью третьего
+	        System.out.println();
+	        System.out.println();
+
+
+	        System.out.println("ex4");
+	        System.out.println("--------------------");
+	        System.out.println();
+	            ex4 Ex4 = new ex4(65.719);
+	            Ex4.print();
+	        System.out.println();
+	        System.out.println();
+
+
+	        System.out.println("ex5");
+	        System.out.println("---------------------");
+	        System.out.println();
+	            System.out.println(new ex5().getA());
+	            System.out.println(new ex5(89).getA());
+	            ex5 Ex5 = new ex5();
+	            Ex5.setA(101);
+	            System.out.print(Ex5.getA());
+	        System.out.println();
+	        System.out.println();
+
+
+	        System.out.println("ex6");
+	        System.out.println("----------------------");
+	        System.out.println();
+	            ex6 Ex6 = new ex6(120, 291);
+	            Ex6.print();
+	            Ex6.setValues(300);
+	            Ex6.print();
+	            Ex6.setValues(301, 101);
+	            Ex6.print();
+
+
+
+	    }
+}
