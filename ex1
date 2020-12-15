@@ -1,0 +1,17 @@
+public class ex1 {
+
+    private char a; // закрытое символьное поле
+    public void setA(char b) // отк.метод, позволяет присвоить значение полю.
+    {
+       a = b;
+    }
+    public int getCode() // метод возвращает результатом код символа из таблицы
+    {
+        return (int) a;
+    }
+    public void print() // печать в консоль значение и его номер кода
+    {
+        System.out.print(a + " " + (int)a);
+    }
+
+}
