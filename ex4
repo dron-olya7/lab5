@@ -1,0 +1,25 @@
+public class ex4 {
+    private char x;
+    private int y;
+
+    public ex4(char b, int a) // конструктор с аргументами типа  int  и char
+    {
+        x = b;
+        y = a;
+
+    }
+    public ex4(double doub) // конструктов с аргументом типа double
+    {
+        int main_part = (int) doub; //берем целую часть от double
+        x = (char)main_part; // в поле х записываем символ с таким целочисленным кодом,  в данном случае 65 =А
+        double b = doub - main_part; // в пиременную b запишем дробную часть числа doub
+        b = b*100;
+        y = (int)b; //  в поле записываем число , образованное десятыми и сотыми долями числа double
+
+    }
+    public void print()
+    {
+        System.out.println(x + " " + y);
+    }
+
+}
