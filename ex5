@@ -1,0 +1,29 @@
+public class ex5 {
+	private int a;
+    public ex5()// конструткор без аргументов
+    {
+        a=0;
+    }
+    public ex5(int b) // конструктор с аргументом
+    {
+        if (b <= 100)
+            a = b;
+        else
+            a =100;
+    }
+    public void setA()//  метод для присвоения полю а (без аргумента)
+    {
+        a = 0;
+    }
+    public void setA(int b) // методдля присвоения значения полю а с аргументом
+    {
+        if (b <= 100)
+            a = b;
+        else
+            a = 100;
+    }
+    public int getA()// проверяем значение поля
+    {
+        return a;
+    }
+}
