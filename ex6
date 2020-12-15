@@ -1,0 +1,46 @@
+public class ex6 {
+    private int min, max; // целочисленные поля
+    public ex6(int a) // конструктор с одним агрументом
+    {
+        max = a;
+        min = a;
+    }
+    public ex6(int a, int b) // конструктор с двумя аргументами
+    {
+        if (a >= b)
+        {
+            max = a;
+            min = b;
+    }
+        else
+        {
+            max = b;
+            min = a;
+        }
+
+}
+    public void setValues(int a)       //  метод с одним аргументом
+    {
+    if (a > max)
+        max = a;
+    if (a < min)
+        min = a;
+
+    }
+    public void setValues(int a, int b) // метод с двумя аргументами
+    {
+        if (a > max)
+            max = a;
+        if (b > max)
+            max = b;
+        if (a < min)
+            min = a;
+        if (b < min)
+            min = b;
+
+    }
+    public void print()   // выводим в консоль значения полей объекта
+    {
+        System.out.println( "max " + max + " " + "min " + min);
+    }
+}
